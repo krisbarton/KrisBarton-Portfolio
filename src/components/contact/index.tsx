@@ -14,7 +14,7 @@ export default function Contact() {
                 </p>
                 <p className="my-4 flex items-center text-sm">
                     <img src={GithubIcon} width="30" height="30" alt="Github Icon" className="mr-2"/> 
-                    <a href="https://www.linkedin.com/in/krisbarton/">My Github</a>
+                    <a href="https://github.com/krisbarton">My Github</a>
                 </p>
                 <p className="my-8">
                     Or just send me a message here...
