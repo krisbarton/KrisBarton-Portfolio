@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "montserrat";
+  src: url('./assets/font/montserrat.ttf') format("truetype");
+}
+
+@theme {
+  --breakpoint-xs: 375px;
+  --color-emerald-50: #f0fdf5;
+  --color-emerald-100: #dbfdeb;
+  --color-emerald-200: #baf8d7;
+  --color-emerald-300: #84f1b7;
+  --color-emerald-400: #32de84;
+  --color-emerald-500: #1ec970;
+  --color-emerald-600: #13a659;
+  --color-emerald-700: #138248;
+  --color-emerald-800: #14673d;
+  --color-emerald-900: #135434;
+  --color-emerald-950: #042f1b;
+  --color-stormdust-50: #f6f6f6;
+  --color-stormdust-100: #e7e7e7;
+  --color-stormdust-200: #d1d1d1;
+  --color-stormdust-300: #b0b0b0;
+  --color-stormdust-400: #888888;
+  --color-stormdust-500: #666666;
+  --color-stormdust-600: #5d5d5d;
+  --color-stormdust-700: #4f4f4f;
+  --color-stormdust-800: #454545;
+  --color-stormdust-900: #262626;
+  --color-stormdust-950: #1a1a1a;
+  --color-christalle-50: #f9f4ff;
+  --color-christalle-100: #f1e6ff;
+  --color-christalle-200: #e5d2ff;
+  --color-christalle-300: #d0aeff;
+  --color-christalle-400: #b37bff;
+  --color-christalle-500: #9649ff;
+  --color-christalle-600: #7f25f8;
+  --color-christalle-700: #6b15db;
+  --color-christalle-800: #5d17b2;
+  --color-christalle-900: #4d148f;
+  --color-christalle-950: #33006f;
+}
+
+:root {
+  background-color: #1a1a1a;
+  color: #FFF;
+  font-family: "montserrat", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-shine {
+  background-repeat: no-repeat;
+  background-position: -120px -120px, 0 0;
+  
+  background-image: -webkit-linear-gradient(
+    top left,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+  background-image: -moz-linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );    
+  background-image: -o-linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+  background-image: linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+  
+  -moz-background-size: 250% 250%, 100% 100%;
+       background-size: 250% 250%, 100% 100%;
+  
+  -webkit-transition: background-position 0s ease;
+     -moz-transition: background-position 0s ease;       
+       -o-transition: background-position 0s ease;
+          transition: background-position 0s ease;
+}
+
+.button-shine:hover {
+  background-position: 0 0, 0 0;
+  
+  -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+a {
+  @apply text-emerald-500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
